@@ -1,0 +1,15 @@
+---
+const { data } = Astro.props;
+
+function getFirstNchars(str, length) {
+  return str.substring(0, length);
+}
+---
+
+<article>
+  <h2>{data.title}</h2>
+  <!-- læser fra o til 20 caractere og erstatter resten med ... og læs mere link til en side med den fulde kommentar via id'et -->
+  <p>
+    {getFirstNchars(data.description, 20)}... <a href={"testemonials/" + data.id}> Læs mere</a>
+  </p>
+</article>
