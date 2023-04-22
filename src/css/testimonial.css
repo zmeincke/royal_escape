@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  background-color: #f1f1f1;
+  padding: 40px 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+.mySlides,
+.slideShow {
+  display: none;
+  text-align: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: lighter;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form {
+  background-color: #f1f1f1;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 800px) {
+  .image {
+    display: none;
+  }
+  .container {
+    aspect-ratio: 370/554;
+    max-width: 90%;
+    background-color: black;
+    position: relative;
+    margin: auto;
+  }
+
+  .slide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 20px 0;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+}
+
+@media (min-width: 800px) {
+  .prev,
+  .next,
+  .dot,
+  .container {
+    display: none;
+  }
+  .gallerygrid {
+    display: grid;
+    grid-template-columns: 4fr 3fr 2fr;
+    background-color: black;
+  }
+  .image {
+    max-width: 100%;
+  }
+  .gallerygrid img:first-child {
+    grid-column: 1/2;
+    grid-row: span 2;
+  }
+  .image:nth-child(2) {
+    background-image: url("/dødningehoveder.webp");
+    background-position: 0 -100px;
+    background-size: cover;
+    max-width: 100%;
+  }
+  .gallerygrid img:nth-child(3) {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .gallerygrid img:nth-child(4) {
+    grid-column: 2/4;
+    background-color: black;
+  }
+}

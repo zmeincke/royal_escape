@@ -1,0 +1,121 @@
+---
+---
+
+<div class="form">
+  <h2>Del din oplevelse med os</h2>
+  <form>
+    <label for="name">Navn*</label>
+    <input id="name" name="name" type="text" required />
+    <label for="title">Overskrift*</label>
+    <input id="title" name="title" type="text" required />
+
+    <label for="long">Din oplevelse*</label>
+    <textarea id="long" name="long" rows="6" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+<script>
+  // const headers = ;
+
+  function addTestimonial(newTestimonial) {
+    //dette er funktionen der putter data i tabbellen i databasen
+
+    const url = "https://ezcvglwbnabxpbtovxny.supabase.co/rest/v1/Testimonials";
+    const api =
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV6Y3ZnbHdibmFieHBidG92eG55Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODE0NTYyMTgsImV4cCI6MTk5NzAzMjIxOH0.xOMzadYYtgTehGUZ6HegXJO9hvOfbpmbC5P5Fec9SvQ";
+
+    const options = {
+      method: "POST", //post gør at den putter noget i tabellen istedet for at hente
+      headers: {
+        apikey: api,
+        Authorization: "Bearer " + api,
+        "Content-Type": "application/json",
+        Prefer: "return=representation",
+      },
+      body: JSON.stringify(newTestimonial), //laver variablen newTestimonial til json (her er det et objekt med 2 værdier)
+    };
+
+    console.log("options:", options);
+
+    fetch(url, options)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("data:", data);
+        window.location.href = "/";
+      });
+  }
+
+  const form = document.querySelector("form");
+  console.log("form.elements", form.elements);
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const obj = {
+      name: form.elements.name.value,
+      title: form.elements.title.value,
+      description: form.elements.long.value,
+    };
+
+    addTestimonial(obj);
+  });
+</script>
+
+<style>
+  .form {
+    background-color: #f1f1f1;
+    padding-top: 50px;
+  }
+
+  h2 {
+    background-color: #ef9786;
+    max-width: 400px;
+    padding: 15px 25px;
+    margin: auto;
+    margin-bottom: 50px;
+    color: #5a5656;
+    font-size: 30px;
+    font-weight: 200;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  label {
+    color: #5a5656;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  input,
+  textarea {
+    padding: 0.5rem;
+    border: 2px solid #f1f1f1;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  button {
+    padding: 8px 50px;
+    max-width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: #ef9786;
+    font-size: 20px;
+    color: #5a5656;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: white;
+    border: 2px solid #ef9786;
+  }
+</style>

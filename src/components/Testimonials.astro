@@ -1,0 +1,26 @@
+---
+const url = "https://ezcvglwbnabxpbtovxny.supabase.co/rest/v1/Testimonials";
+const api =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV6Y3ZnbHdibmFieHBidG92eG55Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODE0NTYyMTgsImV4cCI6MTk5NzAzMjIxOH0.xOMzadYYtgTehGUZ6HegXJO9hvOfbpmbC5P5Fec9SvQ";
+
+const options = {
+  method: "GET",
+  headers: {
+    apikey: api,
+  },
+};
+
+const data = await fetch(url, options).then((res) => res.json());
+console.log(data);
+
+import Testimonial from "../components/Testimonial.astro";
+---
+
+{
+  data.map((testimonial) => {
+    if (testimonial.accepted) {
+      return <Testimonial data={testimonial} />;
+    }
+  })
+}
+
