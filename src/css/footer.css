@@ -1,0 +1,34 @@
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.footer_el {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 8px;
+}
+
+.display_none_mobile {
+  display: none;
+}
+.display_none_pc {
+  display: contents;
+}
+
+@media (min-width: 600px) {
+  .display_none_mobile {
+    display: block;
+  }
+  .display_none_pc {
+    display: none;
+  }
+}
