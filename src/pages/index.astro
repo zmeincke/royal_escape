@@ -1,4 +1,7 @@
 ---
+import Testimonials from "../components/Testimonials.astro";
+import AddTestimonial from "../components/AddTestimonial.astro";
+import "../css/testimonial.css";
 ---
 
 <html lang="en">
@@ -7,9 +10,50 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>royalescape</title>
+    <title>Royalescape</title>
   </head>
+
   <body>
     <h1>Royal Escape</h1>
+    <div class="slideshow-container">
+      <Testimonials />
+    </div>
+
+    <div class="container">
+      <div class="mySlides fade">
+        <img class="slide" src="/dronning.webp" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img class="slide" src="/dødningehoveder.webp" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img class="slide" src="/maleri.webp" style="width: 100%" />
+      </div>
+      <div class="mySlides fade">
+        <img class="slide" src="/krone.webp" style="width: 100%" />
+      </div>
+
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+    </div>
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <div class="gallerygrid">
+      <img class="image" src="/dronning.webp" />
+      <div class="image"></div>
+      <img class="image" src="/maleri.webp" />
+      <img class="image" src="/krone.webp" />
+    </div>
+
+    <AddTestimonial />
+
+    <script src="../js/testimonial.js"></script>
+    <script src="../js/billeder.js"></script>
   </body>
 </html>

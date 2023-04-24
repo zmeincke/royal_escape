@@ -1,15 +1,41 @@
 ---
 const { data } = Astro.props;
 
-function getFirstNchars(str, length) {
+function getFirstNChars(str, length) {
   return str.substring(0, length);
 }
+
+import "../css/testimonial.css";
 ---
 
-<article>
-  <h2>{data.title}</h2>
-  <!-- læser fra o til 20 caractere og erstatter resten med ... og læs mere link til en side med den fulde kommentar via id'et -->
+<div class="slideShow fade">
+  <h2>{data.name}</h2>
   <p>
-    {getFirstNchars(data.description, 20)}... <a href={"testemonials/" + data.id}> Læs mere</a>
+    {getFirstNChars(data.description, 80)}
   </p>
-</article>
+  <a href={"testimonials/" + data.id}>Læs mere</a>
+</div>
+
+<style>
+  h2 {
+    color: #ef9786;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  a {
+    background-color: #ef9786;
+    color: black;
+    font-size: 18px;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  a:visited {
+    color: black;
+  }
+</style>
