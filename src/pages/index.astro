@@ -2,6 +2,9 @@
 import Testimonials from "../components/Testimonials.astro";
 import AddTestimonial from "../components/AddTestimonial.astro";
 import "../css/testimonial.css";
+import "../css/burgermenu.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -14,46 +17,53 @@ import "../css/testimonial.css";
   </head>
 
   <body>
-    <h1>Royal Escape</h1>
-    <div class="slideshow-container">
-      <Testimonials />
-    </div>
+    <Header />
 
-    <div class="container">
-      <div class="mySlides fade">
-        <img class="slide" src="/dronning.webp" style="width: 100%" />
+    <main>
+      <h1>Royal Escape</h1>
+      <div class="slideshow-container">
+        <Testimonials />
       </div>
 
-      <div class="mySlides fade">
-        <img class="slide" src="/dødningehoveder.webp" style="width: 100%" />
+      <div class="container">
+        <div class="mySlides fade">
+          <img class="slide" src="/dronning.webp" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img class="slide" src="/dødningehoveder.webp" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img class="slide" src="/maleri.webp" style="width: 100%" />
+        </div>
+        <div class="mySlides fade">
+          <img class="slide" src="/krone.webp" style="width: 100%" />
+        </div>
+
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+      </div>
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+      <div class="gallerygrid">
+        <img class="image" src="/dronning.webp" />
+        <div class="image"></div>
+        <img class="image" src="/maleri.webp" />
+        <img class="image" src="/krone.webp" />
       </div>
 
-      <div class="mySlides fade">
-        <img class="slide" src="/maleri.webp" style="width: 100%" />
-      </div>
-      <div class="mySlides fade">
-        <img class="slide" src="/krone.webp" style="width: 100%" />
-      </div>
+      <AddTestimonial />
 
-      <a class="prev">&#10094;</a>
-      <a class="next">&#10095;</a>
-    </div>
-    <div style="text-align: center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-    </div>
-    <div class="gallerygrid">
-      <img class="image" src="/dronning.webp" />
-      <div class="image"></div>
-      <img class="image" src="/maleri.webp" />
-      <img class="image" src="/krone.webp" />
-    </div>
+      <script src="../js/testimonial.js"></script>
+      <script src="../js/billeder.js"></script>
+      <script src="../js/burgermenu.js"></script>
+    </main>
 
-    <AddTestimonial />
-
-    <script src="../js/testimonial.js"></script>
-    <script src="../js/billeder.js"></script>
+    <Footer />
   </body>
 </html>
