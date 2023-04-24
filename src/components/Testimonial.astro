@@ -11,7 +11,7 @@ import "../css/testimonial.css";
 <div class="slideShow fade">
   <h2>{data.name}</h2>
   <p>
-    {getFirstNChars(data.description, 80)}...
+    {getFirstNChars(data.description, 120)}...
   </p>
   <a href={"testimonials/" + data.id}>Læs mere</a>
 </div>
@@ -25,7 +25,10 @@ import "../css/testimonial.css";
 
   p {
     font-size: 20px;
+    margin: auto;
     margin-bottom: 30px;
+
+    max-width: 65ch;
   }
   a {
     background-color: #ef9786;
