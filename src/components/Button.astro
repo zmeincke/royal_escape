@@ -1,0 +1,20 @@
+---
+const { link } = Astro.props;
+---
+
+<a href={link}>Læs mere</a>
+
+<style>
+  a {
+    background-color: #ef9786;
+    color: black;
+    font-family: var(--s_font);
+    font-size: 18px;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  a:visited {
+    color: black;
+  }
+</style>

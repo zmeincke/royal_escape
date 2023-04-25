@@ -1,5 +1,6 @@
 ---
 const { data } = Astro.props;
+import Button from "./Button.astro";
 
 function getFirstNChars(str, length) {
   return str.substring(0, length);
@@ -13,7 +14,7 @@ import "../css/testimonial.css";
   <p>
     {getFirstNChars(data.description, 120)}...
   </p>
-  <a href={"testimonials/" + data.id}>Læs mere</a>
+  <Button link={"testimonials/" + data.id} />
 </div>
 
 <style>
@@ -30,17 +31,5 @@ import "../css/testimonial.css";
     margin-bottom: 30px;
     font-family: var(--main_font);
     max-width: 65ch;
-  }
-  a {
-    background-color: #ef9786;
-    color: black;
-    font-family: var(--s_font);
-    font-size: 18px;
-    padding: 5px 20px;
-    text-decoration: none;
-    text-align: center;
-  }
-  a:visited {
-    color: black;
   }
 </style>
