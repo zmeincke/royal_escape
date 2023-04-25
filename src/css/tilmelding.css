@@ -1,6 +1,5 @@
 main {
   font-family: dosis;
-  background-color: hotpink;
 }
 
 button {
@@ -13,6 +12,14 @@ button {
   padding: 0.5rem 1.5rem;
 }
 
+.formbox {
+  background-image: url(/public/wallpaper.webp);
+  background-size: cover;
+  display: block;
+  max-width: 100%;
+  margin: 0;
+}
+
 #tilmelding-form {
   padding: 2rem;
   display: grid;
@@ -21,8 +28,8 @@ button {
 }
 
 label {
-  color: blueviolet;
   padding-top: 20%;
+  font-weight: bold;
 }
 
 input,
@@ -30,4 +37,8 @@ select,
 textarea {
   border: none;
   padding: 0.5rem;
+}
+
+body {
+  margin: 0;
 }
