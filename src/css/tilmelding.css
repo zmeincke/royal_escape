@@ -6,9 +6,9 @@ main {
 .formbox {
   background-image: url(/public/wallpaper.webp);
   background-size: cover;
-  display: block;
   max-width: 100%;
   margin: 0;
+  display: grid;
 }
 
 #tilmelding-form {
@@ -41,7 +41,27 @@ body {
 }
 .krone {
   width: 13vh;
+  align-items: center;
 }
 
 @media (min-width: 700px) {
+  #tilmelding-form,
+  .last-div {
+    background-color: white;
+    margin-inline: 20%;
+  }
+  #tilmelding-form {
+    margin-top: 10%;
+  }
+  .last-div {
+    margin-bottom: 10%;
+    padding: 1rem;
+  }
+  main {
+    color: black;
+  }
+  input {
+    border: solid black;
+    width: 100%;
+  }
 }
