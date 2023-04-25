@@ -1,5 +1,6 @@
 main {
   font-family: dosis;
+  color: white;
 }
 
 .formbox {
@@ -19,7 +20,8 @@ main {
 
 label {
   padding-top: 20%;
-  font-weight: bold;
+  font-size: x-large;
+  font-weight: 500;
 }
 
 input,
@@ -32,7 +34,14 @@ textarea {
 body {
   margin: 0;
 }
+.last-div {
+  padding: 2rem;
+  display: grid;
+  justify-content: center;
+}
+.krone {
+  width: 13vh;
+}
 
-.formbox :last-child {
-  margin-top: 20%;
+@media (min-width: 700px) {
 }
