@@ -12,3 +12,10 @@ html {
   --s_font: "Dosis";
 }
 
+a {
+  font-family: var(--main_font);
+}
+
+p {
+  font-family: var(--main_font);
+}
