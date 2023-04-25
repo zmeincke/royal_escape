@@ -1,3 +1,9 @@
+---
+import "../css/style.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
 <html lang="da">
   <head>
     <meta charset="utf-8" />
@@ -8,23 +14,22 @@
   </head>
 
   <body>
-    <h1>Royal Escape</h1>
-    <div class="form-container"></div>
-    <div class="formbox">
-      <form action="">
-        <label for="name">Name:</label>
-        <input placeholder="Tinder" type="text" />
-        <label for="slogan">Slogan:</label>
-        <input placeholder='"Start Swiping"' type="text" />
-        <label for="">Category:</label>
+    <Header />
+    <main>
+      <div class="form-container"></div>
+      <div class="formbox">
+        <form>
+          <label for="name">Navn:</label>
+          <input placeholder="Jens" type="text" />
+          <label for="slogan">Efternavn:</label>
+          <input placeholder="Jensen" type="text" />
+          <label for="E-mail">jensjensen@mail.dk</label>
+          <input placeholder="Jensen" type="text" />
 
-        <label for="description">Description:</label><textarea placeholder="Max 200 characters (with spaces)" name="" rows="5" id="" cols="30" rows="10"></textarea>
-        <label for="founded">Founded:</label>
-        <input type="date" />
-        <label for="free">Free to use:</label>
-        <input type="checkbox" />
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+          <button type="submit">Start</button>
+        </form>
+      </div>
+    </main>
+    <Footer />
   </body>
 </html>
