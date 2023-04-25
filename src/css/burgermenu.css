@@ -48,16 +48,16 @@ header {
 .ul_menu a {
   text-decoration: none;
   color: #505050;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
 .ul_menu a:hover {
-  color: #ca5656;
+  color: #ff8063;
 }
 
 #on_site {
-  color: #ca5656;
+  color: #ff8063;
 }
 
 .hide {
