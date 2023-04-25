@@ -19,12 +19,12 @@ import "../css/burgermenu.css";
     </button>
     <ul class="ul_menu hide">
       <li><a href="https://www.royalescapes.dk">Forside</a></li>
-      <li>
+      <li class="inline">
         <a class="dropdown" href="https://www.royalescapes.dk/dk/escape-rooms/"
           >Escape rooms <img src="/Chevron_Down_L.svg" alt="menu icon" /></a
         >
         <ul>
-          <li class="inline">
+          <li>
             <a
               href="https://www.royalescapes.dk/dk/escape-rooms/royale-mysterie-escape-room"
               >The Royal Mystery</a
@@ -88,6 +88,7 @@ import "../css/burgermenu.css";
     padding-left: 0;
     left: 0;
     display: none;
+    list-style-type: none;
     z-index: 5;
   }
   ul li:hover > ul,
@@ -97,6 +98,7 @@ import "../css/burgermenu.css";
     opacity: 1;
     display: block;
     width: 200px;
+    margin-left: -15px;
     padding: 5px 30px 10px 15px;
     text-align: left;
   }
