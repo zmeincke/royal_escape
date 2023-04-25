@@ -13,8 +13,6 @@ const ul_menu = document.querySelector(".ul_menu");
 
 function sidenVises() {
   console.log("siden vises");
-  close_menu.classList.add("hide");
-  ul_menu.classList.add("hide");
 }
 
 // Lav funktionen "toggleMenu()"
