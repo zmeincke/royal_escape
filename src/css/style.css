@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("/OpenSans-VariableFont.ttf");
+}
+@font-face {
+  font-family: "Dosis";
+  src: url("/Dosis-VariableFont.ttf");
+}
+
+html {
+  --main_font: "OpenSans";
+  --s_font: "Dosis";
+}
