@@ -46,7 +46,7 @@ function toggleMenu() {
     close_menu.classList.add("hide");
 
     // sæt boxshadow på menuen
-    //menu.classList.remove("active");
+    menu.classList.remove("active");
   }
 }
 
