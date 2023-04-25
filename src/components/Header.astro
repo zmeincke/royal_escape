@@ -10,17 +10,86 @@ import "../css/burgermenu.css";
   </figure>
   <nav id="main_menu">
     <button class="toggle_button no_show">
-      <img class="open_menu menu_icon" src="/burgermenu_icon.svg" alt="menu icon" />
-      <img class="close_menu menu_icon hide" src="/exit_icon.svg" alt="menu icon" />
+      <img
+        class="open_menu menu_icon"
+        src="/burgermenu_icon.svg"
+        alt="menu icon"
+      />
+      <img
+        class="close_menu menu_icon hide"
+        src="/exit_icon.svg"
+        alt="menu icon"
+      />
     </button>
     <ul class="ul_menu hide">
       <li><a href="https://www.royalescapes.dk">Forside</a></li>
-      <li><a href="https://www.royalescapes.dk/dk/escape-rooms/">Escape rooms</a></li>
-      <li><a href="/" id="on_site">Kampange</a></li>
+      <li>
+        <a href="https://www.royalescapes.dk/dk/escape-rooms/">Escape rooms</a>
+        <ul>
+          <li>
+            <a
+              href="https://www.royalescapes.dk/dk/escape-rooms/royale-mysterie-escape-room"
+              >The Royal Mystery</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.royalescapes.dk/dk/escape-rooms/the-royal-dungeon"
+              >The Royal Dungeon</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.royalescapes.dk/dk/escape-rooms/the-royal-playroom"
+              >The Royal Playroom</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/" id="on_site">Kampange</a><ul>
+          <li>
+            <a href="/tilmelding">Tilmelding</a>
+          </li>
+        </ul>
+      </li>
+
       <li><a href="https://www.royalescapes.dk/dk/gavekort">Gavekort</a></li>
-      <li><a href="https://www.royalescapes.dk/dk/om-royal-escapes">Om os</a></li>
-      <li><a href="https://www.royalescapes.dk/dk/kontakt-royal-escapes">Kontakt os</a></li>
-      <li><a href="/tilmelding">midlertidig tilmelding</a></li>
+      <li>
+        <a href="https://www.royalescapes.dk/dk/om-royal-escapes">Om os</a>
+      </li>
+      <li>
+        <a href="https://www.royalescapes.dk/dk/kontakt-royal-escapes"
+          >Kontakt os</a
+        >
+      </li>
     </ul>
   </nav>
 </header>
+
+<style>
+  ul li {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding-left: 0;
+    left: 0;
+    display: none;
+    z-index: 5;
+  }
+  ul li:hover > ul,
+  ul li ul:hover {
+    visibility: visible;
+    background-color: white;
+    opacity: 1;
+    display: block;
+    width: 200px;
+    padding: 5px 30px 10px 15px;
+    text-align: left;
+  }
+</style>
