@@ -18,7 +18,7 @@ header {
   width: 550px;
 }
 
-.active {
+.box_active {
   box-shadow: -10px 10px 10px #efefef;
   padding: 5px;
 }
