@@ -10,21 +10,19 @@ import "../css/burgermenu.css";
   </figure>
   <nav id="main_menu">
     <button class="toggle_button no_show">
-      <img
-        class="open_menu menu_icon"
-        src="/burgermenu_icon.svg"
-        alt="menu icon"
-      />
+      <img class="open_menu menu_icon" src="/Hamburger_3.svg" alt="menu icon" />
       <img
         class="close_menu menu_icon hide"
-        src="/exit_icon.svg"
-        alt="menu icon"
+        src="/Close_round.svg"
+        alt="Chevron down"
       />
     </button>
     <ul class="ul_menu hide">
       <li><a href="https://www.royalescapes.dk">Forside</a></li>
       <li>
-        <a href="https://www.royalescapes.dk/dk/escape-rooms/">Escape rooms</a>
+        <a class="dropdown" href="https://www.royalescapes.dk/dk/escape-rooms/"
+          >Escape rooms <img src="/Chevron_Down_L.svg" alt="menu icon" /></a
+        >
         <ul>
           <li>
             <a
@@ -47,7 +45,10 @@ import "../css/burgermenu.css";
         </ul>
       </li>
       <li>
-        <a href="/" id="on_site">Kampange</a><ul>
+        <a class="dropdown" href="/" id="on_site"
+          >Kampange <img src="/Chevron_Down_L.svg" alt="menu icon" /></a
+        >
+        <ul>
           <li>
             <a href="/tilmelding">Tilmelding</a>
           </li>
@@ -68,6 +69,13 @@ import "../css/burgermenu.css";
 </header>
 
 <style>
+  .dropdown {
+    display: flex;
+  }
+  .dropdown img {
+    margin-top: -3px;
+    padding-left: 2px;
+  }
   ul li {
     display: inline-block;
     position: relative;
