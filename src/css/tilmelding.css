@@ -2,16 +2,6 @@ main {
   font-family: dosis;
 }
 
-button {
-  background-color: #5a5656;
-  color: white;
-  border: white;
-  margin-top: 20%;
-  width: fit-content;
-  justify-self: center;
-  padding: 0.5rem 1.5rem;
-}
-
 .formbox {
   background-image: url(/public/wallpaper.webp);
   background-size: cover;
@@ -41,4 +31,8 @@ textarea {
 
 body {
   margin: 0;
+}
+
+.formbox :last-child {
+  margin-top: 20%;
 }
