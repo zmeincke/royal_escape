@@ -69,6 +69,9 @@ header {
 }
 
 @media (min-width: 939px) {
+  .no_show {
+    display: none;
+  }
   .logo img {
     max-height: 80px;
   }
