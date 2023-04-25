@@ -1,8 +1,8 @@
 ---
-const { link, text } = Astro.props;
+const { link, text, variant } = Astro.props;
 ---
 
-<a href={link}>{text}</a>
+<a class={variant} href={link}>{text}</a>
 
 <style>
   a {
@@ -16,5 +16,17 @@ const { link, text } = Astro.props;
   }
   a:visited {
     color: black;
+  }
+
+  .grey {
+    background-color: #363333;
+    color: white;
+    border: solid white;
+    padding-inline: 22px;
+    justify-self: center;
+
+    font-family: var(--s_font);
+    font-size: 18px;
+    text-decoration: none;
   }
 </style>
