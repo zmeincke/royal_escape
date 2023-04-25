@@ -1,16 +1,44 @@
 main {
   font-family: dosis;
-  background-color: bisque;
 }
 
 button {
-  background-color: hotpink;
+  background-color: #5a5656;
+  color: white;
   border: white;
+  margin-top: 20%;
+  width: fit-content;
+  justify-self: center;
+  padding: 0.5rem 1.5rem;
 }
 
-.form-container {
+.formbox {
+  background-image: url(/public/wallpaper.webp);
+  background-size: cover;
+  display: block;
+  max-width: 100%;
+  margin: 0;
 }
 
-.email {
-  white-space: initial;
+#tilmelding-form {
+  padding: 2rem;
+  display: grid;
+  column-gap: 1rem;
+  justify-content: center;
+}
+
+label {
+  padding-top: 20%;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  border: none;
+  padding: 0.5rem;
+}
+
+body {
+  margin: 0;
 }
