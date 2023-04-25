@@ -1,0 +1,16 @@
+main {
+  font-family: dosis;
+  background-color: bisque;
+}
+
+button {
+  background-color: hotpink;
+  border: white;
+}
+
+.form-container {
+}
+
+.email {
+  white-space: initial;
+}
