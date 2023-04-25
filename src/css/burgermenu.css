@@ -18,7 +18,7 @@ header {
   width: 550px;
 }
 
-.active {
+.box_active {
   box-shadow: -10px 10px 10px #efefef;
   padding: 5px;
 }
@@ -37,7 +37,6 @@ header {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  /* width: 180px; */
   margin: 20px 0px;
 }
 
@@ -53,11 +52,11 @@ header {
 }
 
 .ul_menu a:hover {
-  color: #ca5656;
+  color: #ff8063;
 }
 
 #on_site {
-  color: #ca5656;
+  color: #ff8063;
 }
 
 .hide {
@@ -69,6 +68,9 @@ header {
 }
 
 @media (min-width: 939px) {
+  .no_show {
+    display: none;
+  }
   .logo img {
     max-height: 80px;
   }
