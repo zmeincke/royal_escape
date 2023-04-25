@@ -34,7 +34,7 @@ function toggleMenu() {
     close_menu.classList.add("show");
 
     // sæt boxshadow på menuen
-    //menu.classList.add("active");
+    menu.classList.add("active");
   } else {
     //console.log(ul_menu.classList.contains("show"));
 
