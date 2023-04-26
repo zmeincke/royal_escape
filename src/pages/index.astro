@@ -16,11 +16,8 @@ import Button from "../components/Button.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <meta
-      name="description"
-      content="Få en sjov oplevelse i et escape room, hvor teamwork er i centrum. Der venter gys og mystik. Tør du tage den udfordring op?"
-    />
-    <meta name="robots" content="noindex" />
+    <meta name="description" content="Få en sjov oplevelse i et escape room, hvor teamwork er i centrum. Der venter gys og mystik. Tør du tage den udfordring op?" />
+    <!-- <meta name="robots" content="noindex" /> -->
     <title>Royalescape</title>
   </head>
 
@@ -37,45 +34,20 @@ import Button from "../components/Button.astro";
         <div class="box">
           <p>Løs mysteriet og få 20% rabat</p>
         </div>
-        <script
-          src="https://unpkg.com/@lottiefiles/lottie-player@1/dist/lottie-player.js"
-        ></script>
-        <a href="/tilmelding">
-          <lottie-player
-            id="firstLottie"
-            src="/Knap2.json"
-            background="transparent"
-            speed="1.5"
-            hover
-          >
-          </lottie-player></a
-        >
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@1/dist/lottie-player.js"></script>
+        <a href="/tilmelding"> <lottie-player id="firstLottie" src="/Knap2.json" background="transparent" speed="1.5" hover></lottie-player></a>
       </div>
       <div class="thequeen">
         <div class="thequeentext">
           <p>
-            <div class="queen1">
-              Har du lyst til at tage dine nærmeste med på eventyr ?
-            </div>
+            <div class="queen1">Har du lyst til at tage dine nærmeste med på eventyr ?</div>
 
-            <div class="queen2">
-              Har du lyst til at lokke dem med en udfordrende dag, og have det
-              sjovt sammen?
-            </div>
+            <div class="queen2">Har du lyst til at lokke dem med en udfordrende dag, og have det sjovt sammen?</div>
 
-            <div class="queen4">
-              Vi har et mysterium, der skal løses, klar til jer!
-            </div>
-            <div class="queen3">
-              Spillet begynder ved Marmorkirken, i hjertet af Copenhagen. Det
-              eneste, I skal tage med, er en mobil telefon, hvor I kan tilmelde
-              jer og starte spillet .
-            </div>
+            <div class="queen4">Vi har et mysterium, der skal løses, klar til jer!</div>
+            <div class="queen3">Spillet begynder ved Marmorkirken, i hjertet af Copenhagen. Det eneste, I skal tage med, er en mobil telefon, hvor I kan tilmelde jer og starte spillet .</div>
 
-            <div class="queen5">
-              Når I har løst gåderne, får I 20% rabat, som I kan bruge til at
-              spille hos:
-            </div><div>Royal Escape Room Copenhagen</div>
+            <div class="queen5">Når I har løst gåderne, får I 20% rabat, som I kan bruge til at spille hos:</div><div>Royal Escape Room Copenhagen</div>
           </p>
           <br />
           <Button text="Deltag" link={"/tilmelding"} />
@@ -87,38 +59,18 @@ import Button from "../components/Button.astro";
 
       <div class="kasse">
         <div class="mySlides fade">
-          <img
-            class="slide"
-            src="/dronning.webp"
-            style="width: 100%"
-            alt="dronning"
-          />
+          <img class="slide" src="/dronning.webp" style="width: 100%" alt="dronning" />
         </div>
 
         <div class="mySlides fade">
-          <img
-            class="slide"
-            src="/dødningehoveder.webp"
-            style="width: 100%"
-            alt="dødningehoveder"
-          />
+          <img class="slide" src="/dødningehoveder.webp" style="width: 100%" alt="dødningehoveder" />
         </div>
 
         <div class="mySlides fade">
-          <img
-            class="slide"
-            src="/maleri.webp"
-            style="width: 100%"
-            alt="maleri"
-          />
+          <img class="slide" src="/maleri.webp" style="width: 100%" alt="maleri" />
         </div>
         <div class="mySlides fade">
-          <img
-            class="slide"
-            src="/krone.webp"
-            style="width: 100%"
-            alt="krone"
-          />
+          <img class="slide" src="/krone.webp" style="width: 100%" alt="krone" />
         </div>
 
         <a class="prev">&#10094;</a>
