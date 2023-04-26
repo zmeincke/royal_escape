@@ -1,6 +1,6 @@
 .gråbox {
   font-family: Dosis;
-  font-size: 60px;
+  font-size: 30px;
   background-color: rgba(241, 241, 241, 1);
   text-align: center;
 }
@@ -24,7 +24,7 @@
   font-size: 1.2rem;
   line-height: 27px;
   padding: 20px 0;
-  max-width: 1000px;
+  width: 90%;
 }
 
 .queen2,
@@ -75,9 +75,14 @@ video {
     height: 100%;
     width: 100%;
   }
+  .gråbox {
+    padding-top: 100px;
+    font-size: 50px;
+  }
   .thequeentext {
     color: white;
     padding-top: 35%;
+    max-width: 1000px;
   }
   #firstLottie {
     width: 400px;

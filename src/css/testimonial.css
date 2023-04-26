@@ -1,7 +1,4 @@
-
-
 .slideshow-container {
-  max-width: 100%;
   background-color: #f1f1f1;
   padding: 40px 0;
   position: relative;
@@ -99,6 +96,9 @@ h2 {
 }
 
 @media (min-width: 800px) {
+  .slideshow-container {
+    max-width: 100%;
+  }
   .prev,
   .next,
   .dot,
