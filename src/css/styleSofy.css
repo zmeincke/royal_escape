@@ -76,7 +76,7 @@ video {
     width: 100%;
   }
   .gråbox {
-    padding-top: 100px;
+    padding-top: 90px;
     font-size: 50px;
   }
   .thequeentext {
@@ -85,8 +85,8 @@ video {
     max-width: 1000px;
   }
   #firstLottie {
-    width: 400px;
-    height: 400px;
-    margin-left: 42.5%;
+    width: 350px;
+    height: 350px;
+    margin-left: 43.5%;
   }
 }
