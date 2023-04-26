@@ -68,7 +68,7 @@ h2 {
   .image {
     display: none;
   }
-  .container {
+  .kasse {
     aspect-ratio: 370/554;
     max-width: 90%;
     background-color: black;
@@ -105,7 +105,7 @@ h2 {
   .prev,
   .next,
   .dot,
-  .container {
+  .kasse {
     display: none;
   }
   .gallerygrid {

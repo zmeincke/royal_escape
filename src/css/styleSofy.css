@@ -1,0 +1,61 @@
+.gråbox {
+  font-family: Dosis;
+  font-size: 80px;
+  background-color: rgba(241, 241, 241, 1);
+  height: 250px;
+  text-align: center;
+}
+
+.thequeen {
+  max-width: 100%;
+  height: auto;
+}
+
+.thequeentext {
+  position: absolute;
+  top: 100%;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-left: 100px;
+  letter-spacing: 2px;
+  font-family: Dosis;
+  font-size: 200%;
+  line-height: 50px;
+  margin-top: 800px;
+}
+
+.queen2,
+.queen3,
+.queen4,
+.queen5 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.queen5 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(241, 241, 241, 1);
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  display: block;
+  overflow: hidden;
+  height: 850px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}

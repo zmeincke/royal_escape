@@ -4,6 +4,7 @@ import AddTestimonial from "../components/AddTestimonial.astro";
 import "../css/testimonial.css";
 import "../css/burgermenu.css";
 import "../css/style.css";
+import"../css/styleSofy.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 ---
@@ -19,14 +20,51 @@ import Footer from "../components/Footer.astro";
 
   <body>
     <Header />
+    <div class="container">
+      <video loop autoplay muted controls>
+      <source src="/kampangevideo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </div>
 
     <main>
-      <h1>Royal Escape</h1>
+
+      <div class="gråbox">
+        <div class="box">
+         <p>Løs mysteriet og få 20% rabat</p>
+        <div class="knap">
+         <a href="testimonials/7" class="astro-FKBBCKHY">Deltag</a></div>
+        </div>
+        </div>
+<div class="thequeen-container">
+      <div class="thequeen">
+        <img src="/drønningpåtronen.jpg" alt="queen" style="width :100%"/>
+      <div class="thequeentext">
+        <p>
+          <div class="queen">Har du lyst til at tage dine nærmeste med på eventyr ?</div>
+
+<div class="queen2">Har du lyst til at lokke dem med en udfordring dag ,  og have det sjovt sammen?</div>
+
+<div class="queen4">Vi har en mysterium, der skal løses, klar til jer!</div>
+
+Vi har fundet på mystiske gåder som i skal løse sammen.
+<div class="queen3">Spillet begynder ved Marmorkirken , 
+
+i hjertet af Copenhagen .</div> 
+
+Det eneste, at i skal tage med, er en mobil telefon  , hvor i kan tilmelde jer og starte spillet .
+  
+<div class="queen5">Når i kommer til at løse gåderne , får i 20% rabat , 
+
+som i kan bruge til at spille hos Royal Escape Room Copenhagen .</div></p>
+      </div>
+      </div>
+</div>
       <div class="slideshow-container">
         <Testimonials />
       </div>
 
-      <div class="container">
+      <div class="kasse">
         <div class="mySlides fade">
           <img class="slide" src="/dronning.webp" style="width: 100%" />
         </div>
