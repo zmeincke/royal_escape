@@ -1,35 +1,36 @@
 .gråbox {
   font-family: Dosis;
-  font-size: 80px;
+  font-size: 65px;
   background-color: rgba(241, 241, 241, 1);
   height: 250px;
   text-align: center;
 }
 
 .thequeen {
-  max-width: 100%;
-  height: auto;
+  background-image: url("/drønningpåtronen.webp");
+  background-size: cover;
+  aspect-ratio: 1441/844;
+  height: 100%;
+  width: 100%;
 }
 
 .thequeentext {
-  position: absolute;
-  top: 100%;
   color: white;
-  padding: 20px;
   text-align: center;
-  margin-left: 100px;
+  margin: auto;
   letter-spacing: 2px;
   font-family: Dosis;
-  font-size: 200%;
-  line-height: 50px;
-  margin-top: 800px;
+  font-size: 1.2rem;
+  line-height: 27px;
+  padding-top: 550px;
+  max-width: 1000px;
 }
 
 .queen2,
 .queen3,
 .queen4,
 .queen5 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -53,6 +54,7 @@ video {
   height: 850px;
   width: 100%;
   margin-top: 5px;
+  background-color: rgba(241, 241, 241, 1);
 }
 
 video {
