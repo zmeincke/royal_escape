@@ -1,0 +1,68 @@
+
+main {
+  font-family: dosis;
+  color: white;
+}
+
+.formbox {
+  background-image: url(/public/wallpaper.webp);
+  background-size: cover;
+  max-width: 100%;
+  margin: 0;
+  display: grid;
+}
+
+#tilmelding-form {
+  padding: 2rem;
+  display: grid;
+  column-gap: 1rem;
+  justify-content: center;
+}
+
+label {
+  padding-top: 20%;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+input,
+select,
+textarea {
+  border: none;
+  padding: 0.5rem;
+}
+
+body {
+  margin: 0;
+}
+.last-div {
+  padding: 2rem;
+  display: grid;
+  justify-content: center;
+}
+.krone {
+  width: 12vh;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+  #tilmelding-form,
+  .last-div {
+    background-color: white;
+    margin-inline: 20%;
+  }
+  #tilmelding-form {
+    margin-top: 10%;
+  }
+  .last-div {
+    margin-bottom: 10%;
+    padding: 1rem;
+  }
+  main {
+    color: black;
+  }
+  input {
+    border: solid black;
+    width: 100%;
+  }
+}

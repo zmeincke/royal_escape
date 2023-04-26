@@ -9,18 +9,97 @@ import "../css/burgermenu.css";
     </a>
   </figure>
   <nav id="main_menu">
-    <button class="toggle_button display_none_pc">
-      <img class="open_menu menu_icon" src="/burgermenu_icon.svg" alt="menu icon" />
-      <img class="close_menu menu_icon hide" src="/exit_icon.svg" alt="menu icon" />
+    <button class="toggle_button no_show">
+      <img class="open_menu menu_icon" src="/Hamburger_3.svg" alt="menu icon" />
+      <img
+        class="close_menu menu_icon hide"
+        src="/Close_round.svg"
+        alt="Chevron down"
+      />
     </button>
     <ul class="ul_menu hide">
       <li><a href="https://www.royalescapes.dk">Forside</a></li>
-      <li><a href="https://www.royalescapes.dk/dk/escape-rooms/">Escape rooms</a></li>
-      <li><a href="/" id="on_site">Kampange</a></li>
+      <li class="inline">
+        <a class="dropdown" href="https://www.royalescapes.dk/dk/escape-rooms/"
+          >Escape rooms <img src="/Chevron_Down_L.svg" alt="menu icon" /></a
+        >
+        <ul>
+          <li>
+            <a
+              href="https://www.royalescapes.dk/dk/escape-rooms/royale-mysterie-escape-room"
+              >The Royal Mystery</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.royalescapes.dk/dk/escape-rooms/the-royal-dungeon"
+              >The Royal Dungeon</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.royalescapes.dk/dk/escape-rooms/the-royal-playroom"
+              >The Royal Playroom</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="inline">
+        <a class="dropdown" href="/" id="on_site"
+          >Kampagne <img src="/Chevron_Down_L.svg" alt="menu icon" /></a
+        >
+        <ul>
+          <li>
+            <a href="/tilmelding">Tilmelding</a>
+          </li>
+        </ul>
+      </li>
+
       <li><a href="https://www.royalescapes.dk/dk/gavekort">Gavekort</a></li>
-      <li><a href="https://www.royalescapes.dk/dk/om-royal-escapes">Om os</a></li>
-      <li><a href="https://www.royalescapes.dk/dk/kontakt-royal-escapes">Kontakt os</a></li>
-      <li><a href="/tilmelding">midlertidig tilmelding</a></li>
+      <li>
+        <a href="https://www.royalescapes.dk/dk/om-royal-escapes">Om os</a>
+      </li>
+      <li>
+        <a href="https://www.royalescapes.dk/dk/kontakt-royal-escapes"
+          >Kontakt os</a
+        >
+      </li>
     </ul>
   </nav>
 </header>
+
+<style>
+  .dropdown {
+    display: flex;
+  }
+  .dropdown img {
+    margin-top: -3px;
+    padding-left: 2px;
+  }
+  .inline {
+    display: block;
+    position: relative;
+    cursor: pointer;
+  }
+  ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding-left: 0;
+    left: 0;
+    display: none;
+    list-style-type: none;
+    z-index: 5;
+  }
+  ul li:hover > ul,
+  ul li ul:hover {
+    visibility: visible;
+    background-color: white;
+    opacity: 1;
+    display: block;
+    width: 200px;
+    margin-left: -15px;
+    padding: 5px 30px 10px 15px;
+    text-align: left;
+  }
+</style>
