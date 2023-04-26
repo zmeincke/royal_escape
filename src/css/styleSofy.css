@@ -1,42 +1,47 @@
 .gråbox {
   font-family: Dosis;
-  font-size: 65px;
+  font-size: 60px;
   background-color: rgba(241, 241, 241, 1);
-  height: 250px;
   text-align: center;
 }
-
-.thequeen {
-  background-image: url("/drønningpåtronen.webp");
-  background-size: cover;
-  aspect-ratio: 1441/844;
-  height: 100%;
-  width: 100%;
+.gråbox p {
+  padding-top: 50px;
+}
+#firstLottie {
+  margin: auto;
+  width: 280px;
+  height: 280;
+  margin-left: 34%;
+  cursor: hover;
 }
 
 .thequeentext {
-  color: white;
+  color: black;
   text-align: center;
   margin: auto;
   letter-spacing: 2px;
   font-family: Dosis;
   font-size: 1.2rem;
   line-height: 27px;
-  padding-top: 38%;
+  padding: 20px 0;
   max-width: 1000px;
 }
 
 .queen2,
 .queen3,
-.queen4,
-.queen5 {
+.queen4 {
   margin-bottom: 10px;
   text-align: center;
 }
 
 .queen5 {
   margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
+}
+
+.knap {
+  padding-bottom: 20px;
 }
 
 video {
@@ -51,7 +56,8 @@ video {
 .container {
   display: block;
   overflow: hidden;
-  height: 850px;
+  aspect-ratio: 1560/850;
+  height: 100%;
   width: 100%;
   margin-top: 5px;
   background-color: rgba(241, 241, 241, 1);
@@ -60,4 +66,22 @@ video {
 video {
   max-width: 100%;
   height: auto;
+}
+@media (min-width: 800px) {
+  .thequeen {
+    background-image: url("/drønningpåtronen.webp");
+    background-size: cover;
+    aspect-ratio: 1441/844;
+    height: 100%;
+    width: 100%;
+  }
+  .thequeentext {
+    color: white;
+    padding-top: 35%;
+  }
+  #firstLottie {
+    width: 400px;
+    height: 400px;
+    margin-left: 42.5%;
+  }
 }

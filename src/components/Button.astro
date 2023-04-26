@@ -7,6 +7,7 @@ const { link, text, variant } = Astro.props;
 <style>
   a {
     background-color: #ef9786;
+    border: solid #ef9786;
     color: black;
     font-family: var(--s_font);
     font-size: 18px;
@@ -18,15 +19,25 @@ const { link, text, variant } = Astro.props;
     color: black;
   }
 
+  a:hover {
+    background-color: white;
+    border: solid #ef9786;
+  }
+
   .grey {
     background-color: #363333;
     color: white;
-    border: solid white;
+    border: solid #363333;
     padding-inline: 22px;
     justify-self: center;
 
     font-family: var(--s_font);
     font-size: 18px;
     text-decoration: none;
+  }
+  .grey:hover {
+    background-color: white;
+    border: solid #363333;
+    color: #363333;
   }
 </style>

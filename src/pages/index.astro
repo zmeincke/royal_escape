@@ -7,6 +7,7 @@ import "../css/style.css";
 import "../css/styleSofy.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Button from "../components/Button.astro";
 ---
 
 <html lang="en">
@@ -31,6 +32,19 @@ import Footer from "../components/Footer.astro";
         <div class="box">
           <p>Løs mysteriet og få 20% rabat</p>
         </div>
+        <script
+          src="https://unpkg.com/@lottiefiles/lottie-player@1/dist/lottie-player.js"
+        ></script>
+        <a href="/tilmelding">
+          <lottie-player
+            id="firstLottie"
+            src="/Knap2.json"
+            background="transparent"
+            speed="1.5"
+            hover
+          >
+          </lottie-player></a
+        >
       </div>
       <div class="thequeen">
         <div class="thequeentext">
@@ -55,9 +69,11 @@ import Footer from "../components/Footer.astro";
 
             <div class="queen5">
               Når I har løst gåderne, får I 20% rabat, som I kan bruge til at
-              spille hos
-            </div><div>Royal Escape Room Copenhagen .</div>
+              spille hos:
+            </div><div>Royal Escape Room Copenhagen</div>
           </p>
+          <br />
+          <Button text="Deltag" link={"/tilmelding"} />
         </div>
       </div>
       <div class="slideshow-container">
@@ -97,12 +113,11 @@ import Footer from "../components/Footer.astro";
       </div>
 
       <AddTestimonial />
-
-      <script src="../js/testimonial.js"></script>
-      <script src="../js/billeder.js"></script>
-      <script src="../js/burgermenu.js"></script>
     </main>
 
     <Footer />
   </body>
+  <script src="../js/testimonial.js"></script>
+  <script src="../js/billeder.js"></script>
+  <script src="../js/burgermenu.js"></script>
 </html>
