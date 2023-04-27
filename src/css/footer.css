@@ -71,9 +71,12 @@ footer {
     width: 60px;
     height: 60px;
   }
+  .some {
+    justify-content: right;
+  }
   .copyright {
     grid-column: 3/4;
     grid-row: 3/4;
-    text-align: center;
+    text-align: right;
   }
 }
