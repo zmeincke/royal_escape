@@ -67,6 +67,10 @@ video {
   max-width: 100%;
   height: auto;
 }
+.animationbox {
+  max-width: 100%;
+  overflow: hidden;
+}
 @media (min-width: 800px) {
   .thequeen {
     background-image: url("/drønningpåtronen.webp");
