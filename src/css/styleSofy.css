@@ -14,7 +14,9 @@
   margin-left: 34.5%;
   cursor: hover;
 }
-
+.thequeen {
+  background-color: white;
+}
 .thequeentext {
   color: black;
   text-align: center;
